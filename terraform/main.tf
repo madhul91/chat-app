@@ -22,7 +22,7 @@ data "aws_subnets" "public_subnets" {
 
 
 resource "aws_security_group" "devops_sg" {
-  name   = "sg12355689"
+  name_prefix = "chat-app-sg-"
   vpc_id = data.aws_vpc.default.id
 
   ingress {
