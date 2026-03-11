@@ -93,6 +93,5 @@ jobs:
         --private-key ~/.ssh/first-keypair.pem \
         -u ubuntu \
         -e "image_tag=${{ github.sha }}" \
-        ansible/deploy.yml
         -e "jwt_secret=${{ secrets.JWT_SECRET }}" \
         ansible/deploy.yml
