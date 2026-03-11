@@ -47,7 +47,7 @@ Thumbs.db
 # ==========================
 # Docker
 # ==========================
-Dockerfile
+
 *.local
 *.tmp
 *.bak
