@@ -92,6 +92,5 @@ jobs:
         -i "${{ steps.tf_output.outputs.ip }}," \
         --private-key ~/.ssh/first-keypair.pem \
         -u ubuntu \
-        ansible/deploy.yml
         -e "image_tag=${{ github.sha }}" \
         ansible/deploy.yml
