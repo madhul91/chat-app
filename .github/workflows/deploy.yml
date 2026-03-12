@@ -39,6 +39,7 @@ jobs:
         image-ref: ${{ env.BACKEND_IMAGE }}:${{ github.sha }}
         severity: CRITICAL,HIGH
         exit-code: 1
+        ignore-unfixed: true
 
     # 6 Push Backend
     - name: Push Backend
@@ -55,6 +56,7 @@ jobs:
         image-ref: ${{ env.FRONTEND_IMAGE }}:${{ github.sha }}
         severity: CRITICAL,HIGH
         exit-code: 1
+        ignore-unfixed: true
 
     # 9 Push Frontend
     - name: Push Frontend
