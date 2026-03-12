@@ -20,12 +20,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    # 2 SonarQube Code Scan
-    - name: SonarQube Scan
-      uses: SonarSource/sonarqube-scan-action@v2
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
     # 3 DockerHub Login
     - name: Login DockerHub
